@@ -10,7 +10,7 @@ var app = builder.Build();
 app.UseRouting();
 app.MapControllerRoute(
     name:"default",
-    pattern: "{Controller:Home}/{action:Index}/{id?}");
+    pattern: "{controller=Categories}/{action=Index}/{id?}");
 
 
 
