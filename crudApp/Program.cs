@@ -6,11 +6,12 @@ var app = builder.Build();
 
 //app.MapGet("/", () => "Hello World!");
 
+app.UseStaticFiles();// to use static files of bootstrap
 
 app.UseRouting();
 app.MapControllerRoute(
     name:"default",
-    pattern: "{controller=Categories}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 
 
